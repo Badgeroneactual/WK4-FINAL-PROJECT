@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warbirds</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <section id="landing">
+    <nav>
+      <div class="nav__container">
+        <img class="logo" src="assets/Design.jpeg" alt="">
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">About Us</a></li>
+          <li><a href="#" class="nav__link nav__link--primary">Contact</a></li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">About Us</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="header__container">
+        <div class="fl-bg-video" data-video-mobile="no" data-width="1080" data-height="700" data-fallback="https://www.platinumfighters.com/wp-content/uploads/video-cover-plat-fighters-11142023.jpg" data-mp4="https://www.platinumfighters.com/wp-content/uploads/home-video-11082023.mp4" data-mp4-type="video/mp4" data-webm-type="video/webm">
+			<video autoplay="" loop="" muted="" playsinline="" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url(&quot;https://www.platinumfighters.com/wp-content/uploads/video-cover-plat-fighters-11142023.jpg&quot;); background-color: transparent; background-repeat: no-repeat; background-size: cover; background-position: center center; left: 0px; bottom: 650px; top: 580px; height:920px; width: 1080px;"><source src="https://www.platinumfighters.com/wp-content/uploads/home-video-11082023.mp4" type="video/mp4"></video></div>
+          <h1>America's Largest Dealer of Vintage and Military Aircraft</h1>
+          <h2>Find your dream Aircraft with <span class="gold">Warbirds</span></h2>
+          <a href="books.html">
+            <button class="btn">Browse Aircraft</button>
+          </a>
+        </div>
+        <figure class="header__img--wrapper">
+          <img src="assets/Undraw_Books.svg" alt="">
+        </figure>
+      </div>
+    </header>
+  </section>
+
+  <main>
+    <section id="highlights">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">
+            Why choose <span class="gold">Warbirds</span>
+          </h2>
+          <div class="highlight__wrapper">
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Experience
+              </h3>
+              <p class="highlight__para">
+                Warbirds has been the Premier Vintage Aircraft Sales Company in the US for Over 75 Years!
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Selection
+              </h3>
+              <p class="highlight__para">
+                More than 150+ Aircraft in our Inventory at any given time
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-tags"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Cost and After Purchase Maintenance
+              </h3>
+              <p class="highlight__para">
+                We guarantee the best prices and we offer after purchase Service and Maintenance on every Aircraft
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container_features">
+        <div class="row">
+          <h2 class="section__title">
+            Newest<span class="gold"> Aquisitions</span>
+          </h2>
+          <div class="books">
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/hurricane.jpg" alt="">
+              </figure>
+              <div class="book__title"><span class="gold">Hawker Hurricane</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--newest">$1.2M</span> 
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/spit.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">SUPERMARINE SPITFIRE</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--newest">$2.2M</span>
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/p-40.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">CURTISS P-40 WARHAWK</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--newest">$980K</span>
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/yak.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">Yakovlev YAK-9</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--newest">$1M</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recent">
+      <div class="container_features">
+        <div class="row">
+          <h2 class="section__title">
+            Aircraft<span class="purple"> Recently Price Reduced</span>
+          </h2>
+          <div class="books">
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/zero.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">MITSUBISHI A6M5 ZERO</span>              
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$2.5M</span> $2M
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/p-47drazor.jpeg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">P-47D Razorback Thunderbolt</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$5.2M</span> $4.8M
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/kittyhawk.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">P-40C KITTYHAWK</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$1.8</span> $1.3M
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/lightning.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">P-38J LIGHTNING</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$6.1M</span>$5.5M
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/F6F.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">F6F HELLCAT</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$2.2M</span>$1.8M
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/p-51d1.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">P-51D MUSTANG</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$2M</span> $1.9M
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/p51d2.jpg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">P-51D MUSTANG</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$4M</span>$3.5M
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="assets/p51d3.jpeg" alt="">
+              </figure>
+              <div class="book__title">
+                <span class="gold">P-51D-N25 MUSTANG</span>
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$6.2M</span> $5.8M
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore">
+      <div class="container_explore">
+        <div class="row row__column">
+          <h2>The STAR rating under each Aircraft Indicates the level of restoration.
+            While 5 STARS notes a fully restored Aircraft, less than 5 indicates work is 
+            still being completed on the project 
+            <button class="btn">Walk the Restoration Hanger</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row row__column">
+        <a href="#">
+          <figure class="footer__logo">
+            <img src="assets/Library.svg" class="footer__logo--img" alt="">
+          </figure>
+        </a>
+        <div class="footer__list">
+          <a href="#" class="footer__link">Home</a>
+          <a class="footer__link no-cursor">About</a>
+          <a class="footer__link no-cursor">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2024 WARBIRDS</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
